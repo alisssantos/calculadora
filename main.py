@@ -1,84 +1,39 @@
+#importanto bibliotecas
 from tkinter import *
+from tkinter import ttk
 
-tela = Tk()
-
-tela.title('CALCULADORA')
-tela.geometry('200x300')
-
-def abre_parentese():
-    print('(')
-
-def fecha_parentese():
-    print(')')
+#color / cores
+color1 = "#0d0d0d"  #BLACK / PRETO
+color2 = "#feffff"  # WHITE / BRANCO
+color3 = "#38576b"  # DARKER BLUE / AZUL MAIS ESCURO
+color4 = "#ECEFF1"  # CINZA
+color5 = "#FFAB40"  # ORANGE / LARANJA
 
 
+#inicio / start
+janela = Tk()
+janela.title('CALCULADORA')
+janela.geometry('235x318')
+janela.config(bg=color1)
 
+#tela de resultado /  result screen
+frame_tela = Frame(janela, width=235, height=50, bg=color3)
+frame_tela.grid(row=0, column=0)
 
+#corpo é onde será atribuido os botões
+frame_corpo = Frame(janela, width=235, height=268)
+frame_corpo.grid(row=1, column=0)
 
+#botões / Buttons
+b1 = Button(frame_corpo, text='C', width = 11, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b1.place(x=0, y=0)
 
-button_c = Button(tela, text = 'C')
-button_c.grid(column = 0, row = 0)
+b2 = Button(frame_corpo, text='%', width = 5, height = 2,bg=color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b2.place(x=119, y=0)
 
-button_p1 = Button(tela, text = '(', command=abre_parentese)
-button_p1.grid(column = 1, row = 0)
+b3= Button(frame_corpo, text='/', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b3.place(x=177, y=0)
 
-button_p2 = Button(tela, text = ')',command=fecha_parentese)
-button_p2.grid(column = 2, row = 0)
+ 
 
-button_div = Button(tela, text = '/')
-button_div.grid(column = 3, row = 0)
-
-button_7 = Button(tela, text = '7')
-button_7.grid(column = 0, row = 1)
-
-button_8 = Button(tela, text = '8')
-button_8.grid(column = 1 ,row = 1)
-
-button_9 = Button(tela, text = '9')
-button_9.grid(column = 2 ,row = 1)
-
-button_mult = Button(tela, text = '*')
-button_mult.grid(column = 3 ,row = 1)
-
-button_4 = Button(tela, text = '4')
-button_4.grid(column = 0 ,row = 2)
-
-button_5 = Button(tela, text = '5')
-button_5.grid(column = 1,row = 2)
-
-button_6 = Button(tela, text = '6')
-button_6.grid(column = 2,row = 2)
-
-button_sub= Button(tela, text = '-')
-button_sub.grid(column = 3,row = 2)
-
-button_1 = Button(tela, text = '1')
-button_1.grid(column = 0 ,row = 3)
-
-button_4 = Button(tela, text = '2')
-button_4.grid(column = 1 ,row = 3)
-
-button_3 = Button(tela, text = '3')
-button_3.grid(column = 2 ,row = 3)
-
-button_soma = Button(tela, text = '+')
-button_soma.grid(column = 3 ,row = 3)
-
-button_0 = Button(tela, text = '0')
-button_0.grid(column = 0 ,row = 4)
-
-button_pct = Button(tela, text = '%')
-button_pct.grid(column = 1 ,row = 4)
-
-button_vir = Button(tela, text = ',')
-button_vir.grid(column = 2,row = 4)
-
-button_rst= Button(tela, text = '=')
-button_rst.grid(column = 3 ,row = 4)
-
-
-
-
-
-
-tela.mainloop()
+janela.mainloop()
