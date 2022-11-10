@@ -5,7 +5,7 @@ from tkinter import ttk
 #color / cores
 color1 = "#0d0d0d"  #BLACK / PRETO
 color2 = "#feffff"  # WHITE / BRANCO
-color3 = "#38576b"  # DARKER BLUE / AZUL MAIS ESCURO
+color3 = "#121317"  # lLEAD  / CHUMBO
 color4 = "#ECEFF1"  # CINZA
 color5 = "#FFAB40"  # ORANGE / LARANJA
 
@@ -13,7 +13,7 @@ color5 = "#FFAB40"  # ORANGE / LARANJA
 #inicio / start
 janela = Tk()
 janela.title('CALCULADORA')
-janela.geometry('235x318')
+janela.geometry('235x305')
 janela.config(bg=color1)
 
 #tela de resultado /  result screen
@@ -24,6 +24,10 @@ frame_tela.grid(row=0, column=0)
 frame_corpo = Frame(janela, width=235, height=268)
 frame_corpo.grid(row=1, column=0)
 
+#criando label
+
+app_label = Label(frame_tela, text='123456789', width=16, height = 2, padx=7, relief=FLAT, anchor='e', justify=RIGHT, font=('Ivy 18'), bg = color3, fg = color2)
+app_label.place(x=0,y=0)
 #botões / Buttons
 b1 = Button(frame_corpo, text='C', width = 11, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
 b1.place(x=0, y=0)
@@ -58,5 +62,17 @@ b14= Button(frame_corpo, text='3', width = 5, height = 2,bg = color4,font=('Ivy 
 b14.place(x=119, y=153)
 b15= Button(frame_corpo, text='+', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
 b15.place(x=178, y=153)
+
+b16 = Button(frame_corpo, text='0', width = 11, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b16.place(x=0, y=204)
+b17 = Button(frame_corpo, text='.', width = 5, height = 2,bg=color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b17.place(x=119, y=204)
+b18 = Button(frame_corpo, text='=', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b18.place(x=178, y=204)
+
+
+
+
+
 
 janela.mainloop()
