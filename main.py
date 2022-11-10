@@ -27,13 +27,36 @@ frame_corpo.grid(row=1, column=0)
 #botões / Buttons
 b1 = Button(frame_corpo, text='C', width = 11, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
 b1.place(x=0, y=0)
-
 b2 = Button(frame_corpo, text='%', width = 5, height = 2,bg=color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
 b2.place(x=119, y=0)
-
 b3= Button(frame_corpo, text='/', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
-b3.place(x=177, y=0)
+b3.place(x=178, y=0)
 
- 
+b4 = Button(frame_corpo, text='7', width = 5, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b4.place(x=0.5, y=51)
+b5 = Button(frame_corpo, text='8', width = 5, height = 2,bg=color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b5.place(x=59.5, y=51)
+b6= Button(frame_corpo, text='9', width = 5, height = 2,bg = color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b6.place(x=119, y=51)
+b7= Button(frame_corpo, text='*', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b7.place(x=178, y=51)
+
+b8 = Button(frame_corpo, text='4', width = 5, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b8.place(x=0.5, y=102)
+b9= Button(frame_corpo, text='5', width = 5, height = 2,bg=color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b9.place(x=59.5, y=102)
+b10= Button(frame_corpo, text='6', width = 5, height = 2,bg = color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b10.place(x=119, y=102)
+b11= Button(frame_corpo, text='-', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b11.place(x=178, y=102)
+
+b12 = Button(frame_corpo, text='1', width = 5, height = 2,bg=color4, font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b12.place(x=0.5, y=153)
+b13 = Button(frame_corpo, text='2', width = 5, height = 2,bg=color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b13.place(x=59.5, y=153)
+b14= Button(frame_corpo, text='3', width = 5, height = 2,bg = color4,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b14.place(x=119, y=153)
+b15= Button(frame_corpo, text='+', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
+b15.place(x=178, y=153)
 
 janela.mainloop()
