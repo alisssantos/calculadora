@@ -24,8 +24,8 @@ frame_tela.grid(row=0, column=0)
 frame_corpo = Frame(janela, width=235, height=268)
 frame_corpo.grid(row=1, column=0)
 
-#criando label
 
+#criando label
 app_label = Label(frame_tela, text='123456789', width=16, height = 2, padx=7, relief=FLAT, anchor='e', justify=RIGHT, font=('Ivy 18'), bg = color3, fg = color2)
 app_label.place(x=0,y=0)
 #botões / Buttons
@@ -69,6 +69,8 @@ b17 = Button(frame_corpo, text='.', width = 5, height = 2,bg=color4,font=('Ivy 1
 b17.place(x=119, y=204)
 b18 = Button(frame_corpo, text='=', width = 5, height = 2,bg = color5, fg = color2,font=('Ivy 13 bold'),relief = RAISED, overrelief=RIDGE)
 b18.place(x=178, y=204)
+
+
 
 
 
