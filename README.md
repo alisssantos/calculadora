@@ -1,2 +1,2 @@
 # calculadora
- calculadora para treinar 
+ calculadora para treina feita em python com uso do tkinter e com arquivo exer 
